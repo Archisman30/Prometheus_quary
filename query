@@ -1,4 +1,4 @@
-prometheus_training--------------------------------------
+prometheus_metrics_name & filtering the metrics-------------------------------------------------------------------------------------------------------------------
 engine_daemon_container_states_containers
 
 engine_daemon_container_states_containers{state="running"}
@@ -7,10 +7,10 @@ up{region="IN"}
 
 sum ( up{region="IN"} )
 
-Range vector example----------------------------------
+Range vector example-------------------------------------------------------------------------------------------------------------------------------------------------
 node_memory_MemFree_bytes{env="prod"}[10m]
 
-Instant vector example--------------------------------------
+Instant vector example------------------------------------------------------------------------------------------------------------------------------------------------
 node_memory_MemFree_bytes{env="prod"}
 
 node_memory_MemFree_bytes{env!="prod"}
